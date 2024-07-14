@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive Navbar</title>
+</head>
+
+<body class="bg-gray-200 ">
+    <div class="navbar mt-2 sm:flex md:flex sm:mt-2 md:mt-2">
+        <div class="title pl-1">
+            <h1 class="text-xl sm:text-3xl md:text-3xl ">Coding <span class="text-cyan-500">Addict</span></h1>
+        </div>
+        <button class="btn sm:hidden absolute right-0 mt-[-1.8rem] font-bold" onclick="togglehide()">
+            <i class='bx bx-menu bx-tada text-2xl text-cyan-500'  ></i>
+        </button>
+
+        <div class="links pl-1 hidden">
+            <ul class="space-y-2 mt-2 font-medium">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    
+        <div class="links-2 m-auto hidden sm:block ">
+            <ul class="flex sm:text-sm text-lg md:text-lg md:space-x-10 sm:space-x-6 font-medium mt-1  font-sans ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="buttons sm:block md:block hidden">
+            <button class="btn border-2 md:p-2 sm:p-1 border-cyan-400 rounded-lg text-cyan-500 hover:drop-shadow">Submit</button>
+            <button class="btn border-2 md:p-2 sm:p-1 border-cyan-400 rounded-lg text-cyan-500 hover:drop-shadow">Sign up</button>
+        </div>
+
+    </div>
+    
+
+
+     
+</body>
+<script src="server.js"></script>
+</html>
